@@ -32,13 +32,22 @@
               Login
             </div>
             <div class="card-body">
-              <form>
+              <form action="login_validation.php">
                 <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Email">
+                  <input name="email" type="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control" placeholder="Password">
+                  <input name="password" type="password" class="form-control" placeholder="Password">
                 </div>
+
+                <?php if(isset($_GET['login']) && $_GET['login'] == 'error'){?>
+
+                  <div class="text-danger">
+                    User or password invalid!
+                  </div>
+
+                <?php } ?>
+
                 <button class="btn btn-lg btn-info btn-block" type="submit">Sign in</button>
               </form>
             </div>
