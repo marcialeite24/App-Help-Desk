@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
     $file = fopen('../../../app_help_desk/ tickets.txt','a');
     $title = str_replace('#', '-', $_POST['title']);
