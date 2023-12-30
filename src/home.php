@@ -1,3 +1,7 @@
+<?php
+  require_once "validator.php"
+?>
+
 <html>
   <head>
     <meta charset="utf-8" />
@@ -34,10 +38,14 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-6 d-flex justify-content-center">
-                  <img src="../images/form_open_ticket.png" width="70" height="70">
+                  <a href="open_ticket.php"> 
+                    <img src="../images/forms_open.png" width="70" height="70">
+                  </a>
                 </div>
                 <div class="col-6 d-flex justify-content-center">
-                  <img src="../images/form_search_ticket.png" width="70" height="70">
+                  <a href="search_ticket.php"> 
+                    <img src="../images/forms_search.png" width="70" height="70">
+                  </a>
                 </div>
               </div>
             </div>
