@@ -25,6 +25,11 @@
         <img src="../images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="logout.php">Log out</a>
+        </li>
+      </ul>
     </nav>
 
     <div class="container">    
@@ -39,15 +44,15 @@
               <div class="row">
                 <div class="col">
                   
-                  <form>
+                  <form method="post" action="register_ticket.php">
                     <div class="form-group">
                       <label>Title</label>
-                      <input type="text" class="form-control" placeholder="Title">
+                      <input name="title" type="text" class="form-control" placeholder="Title">
                     </div>
                     
                     <div class="form-group">
                       <label>Category</label>
-                      <select class="form-control">
+                      <select name="category" class="form-control">
                         <option>Create User</option>
                         <option>Printer</option>
                         <option>Hardware</option>
@@ -58,7 +63,7 @@
                     
                     <div class="form-group">
                       <label>Description</label>
-                      <textarea class="form-control" rows="3"></textarea>
+                      <textarea name="description" class="form-control" rows="3"></textarea>
                     </div>
 
                     <div class="row mt-5">
