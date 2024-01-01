@@ -1,2 +1,3 @@
 # App Help Desk
- PHP app to create and search for tickets using the guidelines given by the Udemy course  'web development - 20 courses + 20 projects'.
+ My first PHP mini-project: a PHP app to create and search for tickets. Udemy challenge from the course 'Complete web development - 20 courses + 20 projects'.
+ 
