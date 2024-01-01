@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    $file = fopen('../../../app_help_desk/ tickets.txt','a');
+    $file = fopen('tickets.txt','a');
     $title = str_replace('#', '-', $_POST['title']);
     $category = str_replace('#', '-', $_POST['category']);
     $description = str_replace('#', '-', $_POST['description']);

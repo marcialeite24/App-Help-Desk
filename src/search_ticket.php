@@ -4,7 +4,7 @@
 
 <?php
   $tickets = array();
-  $file = fopen('../../../app_help_desk/tickets.txt','r');
+  $file = fopen('tickets.txt','r');
   while(!feof($file)) {
     $content = fgets($file);  
     $content_details = explode('#', $content); 
